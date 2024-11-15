@@ -6,6 +6,16 @@ using System.Windows.Forms;
 using Microsoft.VisualBasic.ApplicationServices;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.IO;
+using System.Drawing;
+using System;
+using System.Data;
+using System.IO;
+using System.Runtime.ConstrainedExecution;
+using System.Windows.Forms;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Drawing;
 
 namespace Dades_Alumnes_Joc_Pintar
 {
@@ -20,8 +30,11 @@ namespace Dades_Alumnes_Joc_Pintar
         public formJocPintar()
         {
             InitializeComponent();
+            pBoxDadesAlumnes.Image = Properties.Resources.imgDadesAlumnes;
 
         }
+
+   
 
         private void btnAfegirFila_Click(object sender, EventArgs e)
         {
@@ -172,7 +185,7 @@ namespace Dades_Alumnes_Joc_Pintar
                             row[property.Name] = property.Value;
                         }
                         dataTable.Rows.Add(row);
-                    }
+                    }   
 
                     panelJSON.DataSource = dataTable;
 

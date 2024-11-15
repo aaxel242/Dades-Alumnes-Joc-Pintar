@@ -8,7 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Dades_Alumnes_Joc_Pintar.Properties {
+namespace Dades_Alumnes_Joc_Pintar.Properties
+{
     using System;
     using System.Drawing;
 
@@ -23,16 +24,18 @@ namespace Dades_Alumnes_Joc_Pintar.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class Resources
+    {
         internal static Image imgFondo;
         internal static Image fondo;
         internal static Image imgFondoNaturaleza;
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Resources()
+        {
         }
 
         public static Image Dades_Alumnes { get; internal set; }
@@ -41,35 +44,43 @@ namespace Dades_Alumnes_Joc_Pintar.Properties {
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.ReferenceEquals(resourceMan, null)) {
+        internal static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.ReferenceEquals(resourceMan, null))
+                {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Dades_Alumnes_Joc_Pintar.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
-            get {
+        internal static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
-        internal static byte[] anadir {
-            get {
+        internal static byte[] anadir
+        {
+            get
+            {
                 object obj = ResourceManager.GetObject("anadir", resourceCulture);
                 return ((byte[])(obj));
             }
@@ -84,5 +95,16 @@ namespace Dades_Alumnes_Joc_Pintar.Properties {
             }
         }
 
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap para imgDadesAlumnes.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgDadesAlumnes
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("imgDadesAlumnes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -36,7 +36,9 @@ namespace Dades_Alumnes_Joc_Pintar
             btnAfegirFila = new Button();
             btnEliminarFila = new Button();
             btnGuardar = new Button();
+            pBoxDadesAlumnes = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)panelJSON).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pBoxDadesAlumnes).BeginInit();
             SuspendLayout();
             // 
             // panelJSON
@@ -50,7 +52,6 @@ namespace Dades_Alumnes_Joc_Pintar
             panelJSON.Name = "panelJSON";
             panelJSON.Size = new Size(561, 461);
             panelJSON.TabIndex = 0;
-            //panelJSON.Paint += panelJSON_Paint;
             // 
             // lblDadesAlumnes
             // 
@@ -112,6 +113,15 @@ namespace Dades_Alumnes_Joc_Pintar
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
             // 
+            // pBoxDadesAlumnes
+            // 
+            pBoxDadesAlumnes.BackColor = Color.Transparent;
+            pBoxDadesAlumnes.Location = new Point(34, 75);
+            pBoxDadesAlumnes.Name = "pBoxDadesAlumnes";
+            pBoxDadesAlumnes.Size = new Size(286, 36);
+            pBoxDadesAlumnes.TabIndex = 9;
+            pBoxDadesAlumnes.TabStop = false;
+            // 
             // formJocPintar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -119,6 +129,7 @@ namespace Dades_Alumnes_Joc_Pintar
             BackgroundImage = Properties.Resources.imgAfegir;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(943, 638);
+            Controls.Add(pBoxDadesAlumnes);
             Controls.Add(btnGuardar);
             Controls.Add(btnEliminarFila);
             Controls.Add(btnAfegirFila);
@@ -131,6 +142,7 @@ namespace Dades_Alumnes_Joc_Pintar
             Text = "Form1";
             Click += formJocPintar_Click;
             ((System.ComponentModel.ISupportInitialize)panelJSON).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pBoxDadesAlumnes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -151,5 +163,6 @@ namespace Dades_Alumnes_Joc_Pintar
         private Button btnAfegirFila;
         private Button btnEliminarFila;
         private Button btnGuardar;
+        private PictureBox pBoxDadesAlumnes;
     }
 }
